@@ -19,8 +19,8 @@
         </p>
 
         <p style="margin:0 0 12px;font-size:14px;line-height:20px;">
-          The current time is
-          <strong>{{ $currentTime->format('l, F j, Y \a\t H:i:s') }}</strong>.
+          Your laptop opened at:
+          <strong>{{ $currentTime->format('l, F j, Y \a\t g:i:s A') }}</strong>.
         </p>
 
         <p style="margin:0;font-size:13px;line-height:20px;color:#52525b;">
