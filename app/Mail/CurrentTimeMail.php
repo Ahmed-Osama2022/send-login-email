@@ -30,7 +30,7 @@ class CurrentTimeMail extends Mailable
   public function envelope(): Envelope
   {
     return new Envelope(
-      subject: 'Current time: ' . $this->currentTime->format('Y-m-d H:i:s T'),
+      subject: 'Laptop opened at: ' . $this->currentTime->format('Y-m-d H:i:s T'),
     );
   }
 
