@@ -40,7 +40,7 @@ class SendCurrentTimeWhatsapp implements ShouldQueue
     $sentAt = now();
 
     $text = $this->text
-      ?? 'Your laptop opened at: *' . $sentAt->format('l, F j, Y \a\t g:i:s A') . '*';
+      ?? 'Your laptop opened at: *' . $sentAt->format('l, F j, Y \a\t g:i A') . '*';
 
     // WAHA addresses chats as <number>@c.us; tolerate a full id if one is
     // passed directly (e.g. a group id ending in @g.us).
